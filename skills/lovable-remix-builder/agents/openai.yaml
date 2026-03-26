@@ -1,0 +1,8 @@
+interface:
+  display_name: "Lovable Remix Builder"
+  short_description: "Build premium Lovable sites from references"
+  brand_color: "#4A6CF7"
+  default_prompt: "Use $lovable-remix-builder to turn these references into a section-by-section Lovable build with prompts, rewrites, and follow-on pages."
+
+policy:
+  allow_implicit_invocation: true

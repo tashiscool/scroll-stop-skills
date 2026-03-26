@@ -22,8 +22,10 @@ install_command() {
 
 install_skill "$ROOT_DIR/skills/exploded-scene-prompter"
 install_skill "$ROOT_DIR/skills/scroll-stop-builder"
+install_skill "$ROOT_DIR/skills/lovable-remix-builder"
 install_command "$ROOT_DIR/claude-commands/exploded-scene-prompter.md"
 install_command "$ROOT_DIR/claude-commands/scroll-stop-builder.md"
+install_command "$ROOT_DIR/claude-commands/lovable-remix-builder.md"
 
 chmod +x "$HOME/.codex/skills/scroll-stop-builder/scripts/"*.sh
 chmod +x "$HOME/.claude/skills/scroll-stop-builder/scripts/"*.sh

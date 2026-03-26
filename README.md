@@ -3,10 +3,12 @@
 Reusable agent skills for:
 - building premium exploded-scene prompts and prompt pages
 - turning source videos into scroll-driven landing pages
+- rebuilding premium marketing sites in Lovable from reference sections
 
 This repo includes:
 - `skills/exploded-scene-prompter`
 - `skills/scroll-stop-builder`
+- `skills/lovable-remix-builder`
 - `claude-commands/` wrappers for direct Claude Code slash-command use
 - `examples/heart-car/` as a local test fixture and reference implementation
 - `examples/prompt-packs/` for concrete prompt-pack examples
@@ -26,6 +28,13 @@ Use when you want something like:
 Use when you want something like:
 - “Build a scroll-driven landing page around the latest video in my Downloads folder.”
 - “Imitate that sticky scrollytelling / parallax feel from a premium ad.”
+
+### `lovable-remix-builder`
+
+Use when you want something like:
+- “Use this premium SaaS site as a reference and rebuild it in Lovable for my company.”
+- “Create a section-by-section Lovable build instead of one huge prompt.”
+- “Rewrite this homepage for a church, startup, or client while keeping the same visual system.”
 
 ## Install
 
@@ -58,6 +67,10 @@ Use $exploded-scene-prompter to create an HTML prompt page for a moving van with
 Use $exploded-scene-prompter to turn my dating-app heart logo into assembled, exploded, and video-transition prompts before we build the landing page around it.
 ```
 
+```text
+Use $lovable-remix-builder to turn these references into a section-by-section Lovable build for our dating app, then generate an About page in the same style.
+```
+
 ### Claude Code
 
 ```text
@@ -66,6 +79,10 @@ Use $exploded-scene-prompter to turn my dating-app heart logo into assembled, ex
 
 ```text
 /exploded-scene-prompter
+```
+
+```text
+/lovable-remix-builder
 ```
 
 ## Local Example
@@ -89,6 +106,10 @@ http://localhost:4173
 
 - [dating-heart-logo](examples/prompt-packs/dating-heart-logo.md)
 - the moving-van canonical example also lives inside the skill references at [moving-van-example.md](skills/exploded-scene-prompter/references/moving-van-example.md)
+
+## Lovable Remix Example
+
+- [lovable-remix example](examples/lovable-remix/README.md)
 
 ## Validate The Repo
 

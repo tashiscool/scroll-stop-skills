@@ -14,6 +14,7 @@ REQUIRED_FILES = [
     "install.sh",
     "claude-commands/exploded-scene-prompter.md",
     "claude-commands/scroll-stop-builder.md",
+    "claude-commands/lovable-remix-builder.md",
     "skills/exploded-scene-prompter/SKILL.md",
     "skills/exploded-scene-prompter/agents/openai.yaml",
     "skills/exploded-scene-prompter/assets/prompt-page-template.html",
@@ -26,11 +27,17 @@ REQUIRED_FILES = [
     "skills/scroll-stop-builder/scripts/video_probe.sh",
     "skills/scroll-stop-builder/scripts/extract_preview_frames.sh",
     "skills/scroll-stop-builder/scripts/extract_scroll_frames.sh",
+    "skills/lovable-remix-builder/SKILL.md",
+    "skills/lovable-remix-builder/agents/openai.yaml",
+    "skills/lovable-remix-builder/references/reference-selection.md",
+    "skills/lovable-remix-builder/references/lovable-prompt-patterns.md",
+    "skills/lovable-remix-builder/references/section-remix-example.md",
     "examples/heart-car/README.md",
     "examples/heart-car/site/index.html",
     "examples/heart-car/site/styles.css",
     "examples/heart-car/site/app.js",
     "examples/prompt-packs/dating-heart-logo.md",
+    "examples/lovable-remix/README.md",
 ]
 
 REQUIRED_STRINGS = {
@@ -50,9 +57,15 @@ REQUIRED_STRINGS = {
         "PROMPT B - DECONSTRUCTED / EXPLODED VIEW",
         "PROMPT C - VIDEO TRANSITION (START FRAME / END FRAME)",
     ],
+    "skills/lovable-remix-builder/SKILL.md": [
+        "section-by-section remix workflow",
+        "Reference Selection Rules",
+        "Write section prompts for Lovable",
+    ],
     "README.md": [
         "validate-skill-pack.py",
         "examples/prompt-packs/dating-heart-logo.md",
+        "lovable-remix-builder",
     ],
 }
 
