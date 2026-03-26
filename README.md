@@ -16,7 +16,8 @@ This repo includes:
 
 Use when you want something like:
 - “Build me an HTML prompt page for a moving company van with furniture exploding out of the back.”
-- “Turn this product into assembled, exploded, and detail-shot prompts.”
+- “Turn this product into assembled, exploded, and video-transition prompts.”
+- “Give me all three prompts so I can generate stronger stills before I generate the motion pass.”
 
 ### `scroll-stop-builder`
 

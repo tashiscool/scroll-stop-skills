@@ -11,12 +11,20 @@ Use this skill when the user wants:
 - a hero sequence synchronized to extracted frames
 - a video-led campaign page with sticky sections and motion pacing
 
+If the user does not have a finished video yet and is still shaping the visual concept, first generate the three-part prompt package with `exploded-scene-prompter`:
+1. assembled still
+2. exploded still
+3. video transition prompt
+
+Use that package to improve the motion brief before building the site around the resulting asset.
+
 ## Default Workflow
 
 ### 1. Find or confirm the source video
 - If the user gives a path, use it.
 - If the user says “the latest file in Downloads,” inspect `~/Downloads` and confirm the best video candidate if there is any ambiguity.
 - Prefer `.mp4`, `.mov`, or `.webm`.
+- If there is no source video yet, stop and strengthen the visual brief first instead of pretending the video already exists.
 
 ### 2. Inspect the asset
 - Run `scripts/video_probe.sh <video-path>` to get duration, fps, dimensions, and codec.
@@ -71,6 +79,7 @@ Deliver:
 - Ask only the minimum clarifying questions required.
 - If the repo already contains a front-end stack, adapt to it.
 - If the user only wants the concept or prompt, do not overbuild.
+- If the video concept is weak or generic, recommend generating the assembled / exploded / transition trio first.
 - If the video is unsuitable for frame-by-frame scrubbing, fall back to:
   - autoplay hero loop
   - sticky text reveals
