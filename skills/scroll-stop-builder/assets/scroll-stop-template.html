@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Stop Template</title>
+    <style>
+      :root {
+        --bg: #ece5d8;
+        --ink: #171411;
+        --muted: #6b6258;
+        --accent: #c36b36;
+        --panel: rgba(255,255,255,0.72);
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at top right, rgba(195,107,54,0.14), transparent 30%),
+          linear-gradient(180deg, #f5efe5, var(--bg));
+        font-family: Georgia, "Iowan Old Style", serif;
+      }
+
+      .hero,
+      .panel,
+      .cta {
+        width: min(1180px, calc(100vw - 32px));
+        margin: 0 auto;
+      }
+
+      .hero {
+        min-height: 100svh;
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        gap: 28px;
+        align-items: center;
+        padding: 48px 0;
+      }
+
+      .eyebrow {
+        text-transform: uppercase;
+        letter-spacing: 0.18em;
+        font-size: 12px;
+        color: var(--accent);
+      }
+
+      h1 {
+        margin: 12px 0 16px;
+        font-size: clamp(48px, 8vw, 104px);
+        line-height: 0.95;
+        letter-spacing: -0.06em;
+      }
+
+      .lede,
+      .panel p,
+      .cta p {
+        font-size: 18px;
+        line-height: 1.65;
+        color: var(--muted);
+      }
+
+      .hero-stage,
+      .sticky-stage {
+        position: relative;
+        border-radius: 28px;
+        overflow: hidden;
+        min-height: 70svh;
+        background: rgba(255,255,255,0.55);
+        box-shadow: 0 30px 90px rgba(46, 35, 21, 0.14);
+      }
+
+      .hero-stage img,
+      .sticky-stage img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .scrolly {
+        width: min(1180px, calc(100vw - 32px));
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 0.95fr 1.05fr;
+        gap: 28px;
+        align-items: start;
+        padding: 10svh 0 18svh;
+      }
+
+      .sticky-stage {
+        position: sticky;
+        top: 16px;
+        height: calc(100svh - 32px);
+      }
+
+      .copy-stack {
+        display: grid;
+        gap: 24px;
+      }
+
+      .panel {
+        padding: 28px;
+        border: 1px solid rgba(23,20,17,0.08);
+        border-radius: 24px;
+        background: var(--panel);
+        backdrop-filter: blur(10px);
+      }
+
+      .cta {
+        padding: 0 0 96px;
+      }
+
+      @media (max-width: 900px) {
+        .hero,
+        .scrolly {
+          grid-template-columns: 1fr;
+        }
+
+        .sticky-stage {
+          position: relative;
+          top: auto;
+          height: 58svh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero">
+      <div>
+        <div class="eyebrow">{{eyebrow}}</div>
+        <h1>{{headline}}</h1>
+        <p class="lede">{{subhead}}</p>
+      </div>
+      <div class="hero-stage">
+        <img src="{{hero_image}}" alt="{{headline}}" />
+      </div>
+    </section>
+
+    <section class="scrolly">
+      <div class="copy-stack">
+        <article class="panel"><p>{{beat_one}}</p></article>
+        <article class="panel"><p>{{beat_two}}</p></article>
+        <article class="panel"><p>{{beat_three}}</p></article>
+      </div>
+      <div class="sticky-stage">
+        <img src="{{sticky_image}}" alt="Scroll visual" />
+      </div>
+    </section>
+
+    <section class="cta">
+      <article class="panel">
+        <div class="eyebrow">Call To Action</div>
+        <h2>{{cta_headline}}</h2>
+        <p>{{cta_copy}}</p>
+      </article>
+    </section>
+  </body>
+</html>

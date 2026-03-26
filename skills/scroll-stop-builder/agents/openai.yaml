@@ -1,0 +1,8 @@
+interface:
+  display_name: "Scroll Stop Builder"
+  short_description: "Build scroll-driven pages from video"
+  brand_color: "#C36B36"
+  default_prompt: "Use $scroll-stop-builder to turn this video into a premium scroll-driven landing page with sticky visual storytelling."
+
+policy:
+  allow_implicit_invocation: true

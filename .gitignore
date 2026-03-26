@@ -1,0 +1,10 @@
+# OS / editor
+.DS_Store
+
+# Local example media inputs and generated frame sequences
+examples/heart-car/source/
+examples/heart-car/site/assets/frames/
+examples/heart-car/site/assets/previews/
+
+# Local preview server artifacts
+examples/**/.cache/
