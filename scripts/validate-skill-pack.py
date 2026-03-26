@@ -32,12 +32,14 @@ REQUIRED_FILES = [
     "skills/lovable-remix-builder/references/reference-selection.md",
     "skills/lovable-remix-builder/references/lovable-prompt-patterns.md",
     "skills/lovable-remix-builder/references/section-remix-example.md",
+    "skills/lovable-remix-builder/references/json-scrape-remix.md",
     "examples/heart-car/README.md",
     "examples/heart-car/site/index.html",
     "examples/heart-car/site/styles.css",
     "examples/heart-car/site/app.js",
     "examples/prompt-packs/dating-heart-logo.md",
     "examples/lovable-remix/README.md",
+    "examples/lovable-remix/pairara-remix.md",
 ]
 
 REQUIRED_STRINGS = {
@@ -61,6 +63,7 @@ REQUIRED_STRINGS = {
         "section-by-section remix workflow",
         "Reference Selection Rules",
         "Write section prompts for Lovable",
+        "scraped JSON export",
     ],
     "README.md": [
         "validate-skill-pack.py",

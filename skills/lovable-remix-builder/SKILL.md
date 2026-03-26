@@ -11,6 +11,7 @@ Use this skill when the user wants:
 - a section-by-section remix workflow instead of one giant vague prompt
 - a site restyled for a new company, church, client, or product
 - a homepage style extended into secondary pages like `About`, `Pricing`, or `Contact`
+- a landing page rebuilt from a scraped JSON export that already contains branding and markdown
 
 ## Core Principle
 
@@ -51,6 +52,15 @@ See [references/reference-selection.md](references/reference-selection.md).
   - demo section
   - CTA
   - footer
+
+If the user gives you a scraped JSON export instead of screenshots, parse it first:
+- branding colors
+- typography
+- primary and secondary CTAs
+- markdown section order
+- logo and media URLs
+
+See [references/json-scrape-remix.md](references/json-scrape-remix.md).
 
 ### 2. Extract the useful structure
 - Use screenshots, notes, or Figma / Relume style section breakdowns if available.

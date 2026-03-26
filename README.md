@@ -110,6 +110,7 @@ http://localhost:4173
 ## Lovable Remix Example
 
 - [lovable-remix example](examples/lovable-remix/README.md)
+- [pairara-remix prompt pack](examples/lovable-remix/pairara-remix.md)
 
 ## Validate The Repo
 
