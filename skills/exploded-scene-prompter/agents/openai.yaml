@@ -1,6 +1,6 @@
 interface:
   display_name: "Exploded Scene Prompter"
-  short_description: "Build premium exploded-scene image prompts"
+  short_description: "Build assembled, exploded, and video prompt packs"
   brand_color: "#BE6A38"
   default_prompt: "Use $exploded-scene-prompter to turn this product or service idea into assembled, exploded, and video-transition prompts plus an HTML prompt page."
 

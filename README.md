@@ -9,6 +9,8 @@ This repo includes:
 - `skills/scroll-stop-builder`
 - `claude-commands/` wrappers for direct Claude Code slash-command use
 - `examples/heart-car/` as a local test fixture and reference implementation
+- `examples/prompt-packs/` for concrete prompt-pack examples
+- `scripts/validate-skill-pack.py` for a lightweight repo self-check
 
 ## What This Supports
 
@@ -28,7 +30,8 @@ Use when you want something like:
 ## Install
 
 ```bash
-cd /Users/tkhan/IdeaProjects/scroll-stop-skills
+git clone https://github.com/tashiscool/scroll-stop-skills.git
+cd scroll-stop-skills
 ./install.sh
 ```
 
@@ -51,6 +54,10 @@ Use $scroll-stop-builder to turn the latest video in my Downloads folder into a 
 Use $exploded-scene-prompter to create an HTML prompt page for a moving van with furniture exploding out of the back.
 ```
 
+```text
+Use $exploded-scene-prompter to turn my dating-app heart logo into assembled, exploded, and video-transition prompts before we build the landing page around it.
+```
+
 ### Claude Code
 
 ```text
@@ -68,7 +75,7 @@ The `examples/heart-car` folder contains a tested scroll-demo workspace built fr
 Open the example locally:
 
 ```bash
-cd /Users/tkhan/IdeaProjects/scroll-stop-skills/examples/heart-car/site
+cd examples/heart-car/site
 python3 -m http.server 4173
 ```
 
@@ -77,6 +84,27 @@ Then open:
 ```text
 http://localhost:4173
 ```
+
+## Prompt-Pack Examples
+
+- [dating-heart-logo](examples/prompt-packs/dating-heart-logo.md)
+- the moving-van canonical example also lives inside the skill references at [moving-van-example.md](skills/exploded-scene-prompter/references/moving-van-example.md)
+
+## Validate The Repo
+
+Run:
+
+```bash
+python3 scripts/validate-skill-pack.py
+```
+
+This checks for the expected repo structure, key prompt-contract strings, executable helper scripts, and the example frame set.
+
+## Tool Compatibility
+
+- Codex: `~/.codex/skills`
+- Claude Code: `~/.claude/skills` and `~/.claude/commands`
+- Cursor / Copilot users can also reuse the `skills/` directories directly because the pack follows the Agent Skills layout
 
 ## Notes
 
