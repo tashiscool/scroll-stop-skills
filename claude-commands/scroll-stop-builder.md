@@ -7,11 +7,12 @@ Turn a source video into a premium scroll-driven website with sticky visual stor
 
 ## Workflow
 
-1. Find or confirm the input video.
-2. If the user says “use the latest file in Downloads,” inspect `~/Downloads` and confirm the best video candidate if needed.
-3. Probe the video and extract preview frames.
-4. Choose the simplest strong implementation for the current repo or workspace.
-5. Build the page and validate it locally.
+1. Read any provided scrape export or brand JSON first for colors, CTA hierarchy, and copy tone.
+2. Find or confirm the input video.
+3. If the user says “use the latest file in Downloads,” inspect `~/Downloads` and confirm the best video candidate if needed.
+4. Probe the video and extract preview frames.
+5. Choose the simplest strong implementation for the current repo or workspace.
+6. Build the page and validate it locally.
 
 ## Default Questions
 
@@ -20,6 +21,7 @@ Ask only if needed:
 - Which folder or repo should I build the site in?
 
 If the user does not specify a file but says to use the latest download, go find it.
+If the user provides a scraped JSON export, use it as the brand/copy source for the coded page.
 
 ## Output
 

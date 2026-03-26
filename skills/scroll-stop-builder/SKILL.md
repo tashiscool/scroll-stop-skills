@@ -10,6 +10,7 @@ Use this skill when the user wants:
 - a premium landing page that imitates ad-style parallax or scrollytelling
 - a hero sequence synchronized to extracted frames
 - a video-led campaign page with sticky sections and motion pacing
+- a coded website builder flow that should also inherit brand/copy guidance from a scraped JSON export
 
 If the user does not have a finished video yet and is still shaping the visual concept, first generate the three-part prompt package with `exploded-scene-prompter`:
 1. assembled still
@@ -19,6 +20,18 @@ If the user does not have a finished video yet and is still shaping the visual c
 Use that package to improve the motion brief before building the site around the resulting asset.
 
 ## Default Workflow
+
+### 0. Read any brand/source export first
+- If the user provides a scraped JSON export, use it as a source of truth for:
+  - colors
+  - fonts
+  - CTA hierarchy
+  - copy tone
+  - section ordering clues
+- Do not treat that JSON as the literal page layout. Treat it as a brand/copy brief that informs the coded implementation.
+- If the export includes markdown content or branding tokens, extract them before building.
+
+See [references/json-brand-copy-source.md](references/json-brand-copy-source.md).
 
 ### 1. Find or confirm the source video
 - If the user gives a path, use it.
@@ -39,6 +52,7 @@ Default to a static-site implementation unless the existing repo clearly wants R
 
 ### 4. Build the page
 - Read [references/sections-guide.md](references/sections-guide.md).
+- If the user provided a scrape export, use the extracted copy hierarchy and CTAs while composing the page sections.
 - If you need a starting scaffold, use [assets/scroll-stop-template.html](assets/scroll-stop-template.html).
 - Create a premium page with:
   - strong opening hero
@@ -80,6 +94,7 @@ Deliver:
 - If the repo already contains a front-end stack, adapt to it.
 - If the user only wants the concept or prompt, do not overbuild.
 - If the video concept is weak or generic, recommend generating the assembled / exploded / transition trio first.
+- If the user supplied a brand JSON export, preserve its best tokens and CTA logic even while redesigning the actual page.
 - If the video is unsuitable for frame-by-frame scrubbing, fall back to:
   - autoplay hero loop
   - sticky text reveals

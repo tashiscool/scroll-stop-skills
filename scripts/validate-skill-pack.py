@@ -24,6 +24,7 @@ REQUIRED_FILES = [
     "skills/scroll-stop-builder/agents/openai.yaml",
     "skills/scroll-stop-builder/assets/scroll-stop-template.html",
     "skills/scroll-stop-builder/references/sections-guide.md",
+    "skills/scroll-stop-builder/references/json-brand-copy-source.md",
     "skills/scroll-stop-builder/scripts/video_probe.sh",
     "skills/scroll-stop-builder/scripts/extract_preview_frames.sh",
     "skills/scroll-stop-builder/scripts/extract_scroll_frames.sh",
@@ -53,6 +54,7 @@ REQUIRED_STRINGS = {
         "assembled still",
         "exploded still",
         "video transition prompt",
+        "scraped JSON export",
     ],
     "claude-commands/exploded-scene-prompter.md": [
         "PROMPT A - ASSEMBLED SHOT",
