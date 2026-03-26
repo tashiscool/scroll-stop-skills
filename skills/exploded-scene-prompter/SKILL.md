@@ -19,6 +19,25 @@ Use this skill when the user wants:
 - If the object class is ambiguous, ask one concise clarifying question. Otherwise infer reasonable details and keep moving.
 - Treat vague prompts as under-specified. Improve them by making the motion, staging, object list, pacing, and continuity explicit.
 
+## First-Step Contract
+
+When the user's input is something like:
+
+```text
+Hey using this skill, build me a html view for a moving company which is full of furniture and i want the visual to be the back of that van exploding with all of the items
+```
+
+the first step is **not** to jump straight to HTML.
+
+The first step is to produce the three prompt blocks:
+1. `PROMPT A - ASSEMBLED SHOT`
+2. `PROMPT B - DECONSTRUCTED / EXPLODED VIEW`
+3. `PROMPT C - VIDEO TRANSITION (START FRAME / END FRAME)`
+
+Then, if the user asked for an HTML view, build the HTML page around those prompts.
+
+See [references/moving-van-example.md](references/moving-van-example.md) for the canonical pattern.
+
 ## Output Package
 
 Produce these sections unless the user asks for fewer:
@@ -82,6 +101,7 @@ If the user's original concept is generic, strengthen it before output:
 - add “same lighting setup” and continuity wording between stills and video
 ### 5. Build the HTML view when requested
 - Read [references/prompt-patterns.md](references/prompt-patterns.md) for scene formulas.
+- Read [references/moving-van-example.md](references/moving-van-example.md) when the request is similar to a vehicle or logistics explosion concept.
 - Read [assets/prompt-page-template.html](assets/prompt-page-template.html).
 - Replace placeholders with the generated prompt package and scene summary.
 - Keep the page elegant and readable, optimized for copy/paste into image tools or creative reviews.

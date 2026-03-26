@@ -7,6 +7,8 @@ The default deliverable is a three-part package:
 2. exploded still
 3. video transition from 1 to 2
 
+If the user also asked for an HTML page, the HTML is built after these three prompts, not instead of them.
+
 ## Base Formula
 
 1. Hero subject and orientation
