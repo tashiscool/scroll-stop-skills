@@ -11,8 +11,9 @@ Turn a source video into a premium scroll-driven website with sticky visual stor
 2. Find or confirm the input video.
 3. If the user says “use the latest file in Downloads,” inspect `~/Downloads` and confirm the best video candidate if needed.
 4. Probe the video and extract preview frames.
-5. Choose the simplest strong implementation for the current repo or workspace.
-6. Build the page and validate it locally.
+5. Shape the copy around value add: promise, mechanism, payoff, proof, and CTA ladder.
+6. Choose the simplest strong implementation for the current repo or workspace.
+7. Build the page and validate it locally.
 
 ## Default Questions
 

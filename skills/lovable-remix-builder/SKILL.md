@@ -74,6 +74,7 @@ See [references/json-scrape-remix.md](references/json-scrape-remix.md).
   - follow the existing styles
   - keep the same colors, type scale, and spacing language
   - keep mobile responsiveness clean
+- Write copy using [references/value-add-copy-framework.md](references/value-add-copy-framework.md).
 
 See [references/lovable-prompt-patterns.md](references/lovable-prompt-patterns.md).
 
@@ -109,6 +110,9 @@ See [references/lovable-prompt-patterns.md](references/lovable-prompt-patterns.m
 - Prefer “add one section below with these constraints” over giant all-in-one prompts.
 - When restyling, explicitly tell Lovable to preserve existing style tokens.
 - When rewriting content, tell it to keep structure but change the brand, audience, and use case.
+- Make the copy explain the value add, not just list features.
+- Prefer one primary CTA and one lower-friction supporting CTA.
+- Use comparison, proof, and mechanism copy when the product needs trust or explanation.
 
 ## Deliverables
 

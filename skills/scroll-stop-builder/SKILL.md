@@ -52,6 +52,7 @@ Default to a static-site implementation unless the existing repo clearly wants R
 
 ### 4. Build the page
 - Read [references/sections-guide.md](references/sections-guide.md).
+- Read [references/value-add-copy-framework.md](references/value-add-copy-framework.md).
 - If the user provided a scrape export, use the extracted copy hierarchy and CTAs while composing the page sections.
 - If you need a starting scaffold, use [assets/scroll-stop-template.html](assets/scroll-stop-template.html).
 - Create a premium page with:
@@ -78,6 +79,9 @@ Default to a static-site implementation unless the existing repo clearly wants R
 - Use motion to reveal meaning, not just to decorate.
 - Let the strongest shot carry the hero section.
 - Avoid cluttered copy overlays on top of dense video frames.
+- Make the value add explicit: what improves, why it improves, and what work the app removes.
+- Tie each scroll beat to a new product insight, not just a new sentence.
+- Prefer one clear primary CTA and one supporting CTA.
 
 ## Output Checklist
 

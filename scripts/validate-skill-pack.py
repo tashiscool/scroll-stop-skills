@@ -25,6 +25,7 @@ REQUIRED_FILES = [
     "skills/scroll-stop-builder/assets/scroll-stop-template.html",
     "skills/scroll-stop-builder/references/sections-guide.md",
     "skills/scroll-stop-builder/references/json-brand-copy-source.md",
+    "skills/scroll-stop-builder/references/value-add-copy-framework.md",
     "skills/scroll-stop-builder/scripts/video_probe.sh",
     "skills/scroll-stop-builder/scripts/extract_preview_frames.sh",
     "skills/scroll-stop-builder/scripts/extract_scroll_frames.sh",
@@ -34,6 +35,7 @@ REQUIRED_FILES = [
     "skills/lovable-remix-builder/references/lovable-prompt-patterns.md",
     "skills/lovable-remix-builder/references/section-remix-example.md",
     "skills/lovable-remix-builder/references/json-scrape-remix.md",
+    "skills/lovable-remix-builder/references/value-add-copy-framework.md",
     "examples/heart-car/README.md",
     "examples/heart-car/site/index.html",
     "examples/heart-car/site/styles.css",
@@ -55,6 +57,7 @@ REQUIRED_STRINGS = {
         "exploded still",
         "video transition prompt",
         "scraped JSON export",
+        "value-add-copy-framework.md",
     ],
     "claude-commands/exploded-scene-prompter.md": [
         "PROMPT A - ASSEMBLED SHOT",
@@ -66,6 +69,7 @@ REQUIRED_STRINGS = {
         "Reference Selection Rules",
         "Write section prompts for Lovable",
         "scraped JSON export",
+        "value-add-copy-framework.md",
     ],
     "README.md": [
         "validate-skill-pack.py",
